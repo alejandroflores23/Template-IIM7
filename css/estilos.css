@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: yellow;/*#d4f7f8;*/
+    font-size: 16px;
+}
+
+.box{
+    width: 33%;
+    height: 200px;
+    border: 1px solid #18587b;
+    background: #f3f3f3;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+/*.box:first-child{
+    background: red;
+}
+.box:last-child{
+    background: white;
+}*/
+.box:nth-child(odd){
+    background: green;
+}
+.box:nth-child(even){
+    background: blue;
+}
+.container{
+    width: 100%;    
+    letter-spacing: -1.35em;    
+    background: orange;
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    background: olive;
+    display: inline-block;
+    position: relative;
+}
+    .header h1{
+        color: aliceblue;
+        background: yellow;
+        display: inline-block;
+    }
+    .header .navbar{
+        background: red;
+        letter-spacing: -1.35em;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+    .navbar ul{
+        background: orange;        
+    }
+    .navbar ul li{
+        background: red;
+        display: inline-block;
+        letter-spacing: normal;
+        font-size: 1.8rem;
+        padding: 0.3rem;
+    }
+
+/*Media queries movil*/
+@media screen and (max-width: 456px){
+    body{
+        background: red;
+    }
+    .box{
+        width: 100%;
+    }
+}
+
+/*Media querie tablet*/
+@media screen and (min-width: 457px) and (max-width: 767px){
+    body{
+        background: yellow;
+    }
+    .box{
+        width: 50%;        
+    }
+    .box:first-child{
+        background: blue;
+        margin-left: 0;
+    }
+}
+
+/*www.github.com*/
